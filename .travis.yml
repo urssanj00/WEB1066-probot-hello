@@ -4,7 +4,7 @@ services:
 
 before_install:
   - docker pull node:8-onbuild
-  - dcoker build -t probot-hello .
+  - docker build -t probot-hello .
 
 script:
   - docker run --rm probot-hello npm run test
